@@ -25,6 +25,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build Docker image
-        run: docker build -t seunggorani/songdo .
+        run: docker build -t seunggorani/alpha .
       - name: Push docker image
-        run: docker push seunggorani/songdo:latest
+        run: docker push seunggorani/alpha:latest
